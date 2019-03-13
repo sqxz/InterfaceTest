@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--数据库配置文件-->
+    <properties resource="jdbc.properties"/>
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+        <setting name="useGeneratedKeys" value="false"/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+
+    <environments default="development">
+        <environment id="autotest">
+            <transactionManager type="JDBC" />
+            <!-- 配置数据库连接信息 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${autotest.driver}" />
+                <property name="url" value="${autotest.url}" />
+                <property name="username" value="${autotest.user}" />
+                <property name="password" value="${autotest.pass}" />
+            </dataSource>
+        </environment>
+
+        <environment id="rangym">
+            <transactionManager type="JDBC" />
+            <!-- 配置数据库连接信息 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${rangym.driver}" />
+                <property name="url" value="${rangym.url}" />
+                <property name="username" value="${rangym.user}" />
+                <property name="password" value="${rangym.pass}" />
+            </dataSource>
+        </environment>
+
+
+    </environments>
+
+    <!--注册映射文件 -->
+    <mappers>
+        <mapper resource="mapper/SQLMapper.xml"/>
+        <mapper resource="mapper/ApplicationMapper.xml"/>
+    </mappers>
+</configuration>
