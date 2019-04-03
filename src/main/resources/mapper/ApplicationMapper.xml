@@ -8,7 +8,15 @@
 
     <!--获取门店信息-->
     <select id="nearbyshop"  resultType="map">
-        select * from shop where uid=#{uid} and id = 140069141
+        select id as shop_id,shop_name as shop_name from shop where uid=#{uid}
     </select>
+    
+<!--
+    <resultMap id="shopResultMap" type="map">
+        <id property="id" column="id"/>
+        <result property="shopname" column="shop_name"/>
+    </resultMap>-->
+    
+
 
 </mapper>

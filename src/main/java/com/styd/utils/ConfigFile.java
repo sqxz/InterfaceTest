@@ -5,7 +5,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class ConfigFile {
-    private static ResourceBundle bundle = ResourceBundle.getBundle("application", Locale.CHINA);
+    private static ResourceBundle bundle = ResourceBundle.getBundle("testApi", Locale.CHINA);
 
     /**
      * 获取接口测试URL

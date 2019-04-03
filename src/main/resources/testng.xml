@@ -4,12 +4,9 @@
 <suite name="测试套件">
     <test name="testDemo">
         <classes>
-            <class name="com.styd.testcases.TestDemo">
-                <methods>
-                    <include name="nearby_shop_test"/>
-                    <include name="get_agreement_test"/>
-                </methods>
-            </class>
+            <class name="com.styd.testcases.GetDemo"/>
+            <class name="com.styd.testcases.PostDemo"/>
+            <class name="com.styd.testcases.TestDemo"/>
         </classes>
     </test>
 

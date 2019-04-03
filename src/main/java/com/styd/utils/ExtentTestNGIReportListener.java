@@ -14,6 +14,7 @@ import org.testng.xml.XmlSuite;
 import java.io.File;
 import java.util.*;
 
+
 public class ExtentTestNGIReportListener implements IReporter {
     //生成的路径以及文件名
     private static final String OUTPUT_FOLDER = "test-output/";

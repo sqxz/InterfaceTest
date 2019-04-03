@@ -13,4 +13,11 @@
         where id=#{id}
     </select>
 
+    <!--批量插入数据-->
+    <insert id="insertData" >
+        insert into users (id,username,password)
+        values (#{id},#{username},#{password})
+    </insert>
+
+
 </mapper>
