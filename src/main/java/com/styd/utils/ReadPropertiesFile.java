@@ -4,7 +4,7 @@ package com.styd.utils;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class ConfigFile {
+public class ReadPropertiesFile {
     private static ResourceBundle bundle = ResourceBundle.getBundle("testApi", Locale.CHINA);
 
     /**

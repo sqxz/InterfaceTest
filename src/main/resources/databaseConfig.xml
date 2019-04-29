@@ -10,8 +10,8 @@
     </settings>
 
 
-    <environments default="development">
-        <environment id="autotest">
+    <environments default="AUTOTEST">
+        <environment id="AUTOTEST">
             <transactionManager type="JDBC" />
             <!-- 配置数据库连接信息 -->
             <dataSource type="POOLED">
@@ -22,7 +22,7 @@
             </dataSource>
         </environment>
 
-        <environment id="rangym">
+        <environment id="RANGYM">
             <transactionManager type="JDBC" />
             <!-- 配置数据库连接信息 -->
             <dataSource type="POOLED">
@@ -38,7 +38,7 @@
 
     <!--注册映射文件 -->
     <mappers>
-        <mapper resource="mapper/SQLMapper.xml"/>
-        <mapper resource="mapper/ApplicationMapper.xml"/>
+        <mapper resource="mapper/TestCaseSqlMapper.xml"/>
+        <mapper resource="mapper/ConfirmResultSqlMapper.xml"/>
     </mappers>
 </configuration>

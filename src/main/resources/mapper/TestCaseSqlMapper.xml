@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.styd.model">
+
+    <!--查询登录接口测试数据-->
+    <select id="login" parameterType="Integer" resultType="com.styd.model.LoginCase">
+        select * from  login_case where id = #{id}
+    </select>
+
+    <!--查询门店列表测试数据-->
+    <select id="shoplist" parameterType="Integer" resultType="com.styd.model.shop.ShopListCase">
+        select * from getshoplist_case where id = #{id}
+    </select>
+
+    <!--查询创建门店测试数据-->
+    <select id="createshop" parameterType="Integer" resultType="com.styd.model.shop.CreatShopCase">
+        select * from  createshop_case where id = #{id}
+    </select>
+
+    <select id="modifybrandshop" parameterType="Integer" resultType="com.styd.model.shop.ModifyBrandShopCase">
+        select * from modifybrandshop_case where id = #{id}
+    </select>
+
+
+</mapper>
